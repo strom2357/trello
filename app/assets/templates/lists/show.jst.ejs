@@ -1,0 +1,13 @@
+<div class='list_item'>
+<%debugger%>
+	<h4><%= list.get('title') %></h4>
+	<% cards = list.get('cards') %>
+	<% cards.forEach(function(card) { %>
+		<div class='card_item'>
+			<%= card.title %>
+		</div>
+	<% }) %>
+
+
+
+</div>

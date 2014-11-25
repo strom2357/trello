@@ -1,14 +1,11 @@
 <h2>My Boards</h2>
-<% console.log("template gets accessed from render") %>
+
 <div class="boards">
-  <!-- this ul business should get moved to a board show.jst etc -->
-  <ul>
     <% boards.each( function(board){ %>
-      <li>
+      <div class="board_item">
         <a href="#boards/<%= board.id %>">
           <%= board.get('title') %>
         </a>
-      </li>
+      </div>
     <% }) %>
-  </ul>
 </div>
